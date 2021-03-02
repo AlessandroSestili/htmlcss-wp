@@ -16,15 +16,12 @@ header {
 header > img {
     width: 10%;
 
-    border-right: 1px solid lightgray;
     padding-right: 10px;
 }
 
 main > nav {
     width: 80%;
 
-    /* Ricordati di levare il bordo */
-    border: 1px solid black;
     margin: auto;
 }
 
@@ -44,10 +41,92 @@ nav > ul > li {
 
 section > .container {
     width: 80%;
+    height: 400px;
 
-   /* Ricordati di levare il bordo */
-   border: 1px solid black;
    margin: auto;
+   margin-top: 20px;
+   border-radius: 10px;
+   padding: 18% 30% 0 3%;
 
-   background-image: url("img/");
+   background-image: url("img/banner.jpg");
+   background-position: center;
+   /* ricordati di mettere il layer opaco */
 }
+
+section > .container > * {
+    /* ricordati di metterlo bianco */
+    color: black;
+
+    margin: 0;
+}
+
+.header-leadership {
+    width: 80%;
+
+    /* Ricordati di levare il bordo */
+    /* border: 1px solid black; */
+    margin:  2% auto;
+}
+
+.header-leadership > * {
+    margin: 0;
+}
+
+.header-leadership > p {
+    color: lightgray;
+}
+
+.clearfix {
+    width: 80%;
+
+    margin: auto;
+    /* ricordati di levare il bordo  */
+    /* border: 1px solid black; */
+}
+
+.clearfix::after {
+    display: table;
+    content: "";
+    clear: both;
+}
+
+.clearfix > div {
+    float: left;
+
+    border: 1px solid grey;
+
+    height: 150px;
+}
+
+.clearfix > .aside {
+    width: 15%;
+
+    border-radius: 10px;
+}
+
+.clearfix > .central {
+    width: 65%;
+
+    margin: 0 2.5%;
+    border-radius: 10px;
+
+    background-image: url("img/banner-2.jpg");
+    background-size: cover;
+
+    background-position-y: 40%;
+    background-position-x: 30%;
+}
+
+.first.aside {
+    background-image: url("img/img-1.jpg");
+    background-size: contain;
+}
+
+.second.aside {
+    background-image: url("img/img-3.jpg");
+    background-size: cover;
+
+    background-position-x: center;
+}
+
+
