@@ -50,14 +50,17 @@ section > .container {
 
    background-image: url("img/banner.jpg");
    background-position: center;
-   /* ricordati di mettere il layer opaco */
+
+   filter: brightness(80%);
 }
 
 section > .container > * {
     /* ricordati di metterlo bianco */
-    color: black;
+    color: white;
+    /* filter:invert(100%);
+    filter: brightness(20%); */
 
-    margin: 0;
+    margin: 0;    
 }
 
 .header-leadership {
@@ -67,6 +70,13 @@ section > .container > * {
     /* border: 1px solid black; */
     margin:  2% auto;
 }
+
+
+
+
+
+
+
 
 .header-leadership > * {
     margin: 0;
@@ -93,9 +103,11 @@ section > .container > * {
 .clearfix > div {
     float: left;
 
-    border: 1px solid grey;
+    /* border: 1px solid grey; */
 
     height: 150px;
+
+    filter: brightness(80%);
 }
 
 .clearfix > .aside {
@@ -128,5 +140,31 @@ section > .container > * {
 
     background-position-x: center;
 }
+
+.clearfix > div > h3  {
+    margin-top: 20vh;
+}
+
+.clearfix > div > p {
+    color: grey;
+}
+
+footer > p{
+    position: relative;
+
+    text-align: center;
+
+    transform:translateY(40vh);
+
+    color: grey;
+}
+
+.heart {
+    color: red;
+    
+}
+
+
+
 
 
